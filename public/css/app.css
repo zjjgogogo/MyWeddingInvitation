@@ -103,9 +103,9 @@ img {
 .img7 {
 	width: 30%;
 	height: auto;
-    left: 15%;
-    top: 65%;
-    transform: rotate(-20deg);
+    left: 10%;
+    top: 60%;
+    transform: rotate(20deg);
     z-index: 1;
 }
 
