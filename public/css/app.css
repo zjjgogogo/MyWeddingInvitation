@@ -1,5 +1,108 @@
-
 body {
     background-color: #3c3c3c;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.fullDiv {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.gallery_pic1 {
+    width: 75%;
+    border: 3px solid #fff;
+}
+
+.gallery_pic1 {
+    width: 75%;
+    border: 3px solid #fff;
+}
+
+.test {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid #fff;
+}
+
+container {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+}
+
+img {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    cursor: pointer;
+    padding: 10px 10px 25px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.img1 {
+	width: 30%;
+	height: auto;
+    left: 5%;
+    top: 5%;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+.img2 {
+	width: 30%;
+	height: auto;
+    left: 30%;
+    top: 10%;
+    transform: rotate(-30deg);
+    z-index: 1;
+}
+
+.img3 {
+	width: 35%;
+	height: auto;
+    left: 50%;
+    top: 15%;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+.img4 {
+	width: 40%;
+	height: auto;
+    left: 15%;
+    top: 30%;
+    transform: rotate(30deg);
+    z-index: 1;
+}
+
+.img5 {
+	width: 35%;
+	height: auto;
+    left: 55%;
+    top: 40%;
+    transform: rotate(-40deg);
+    z-index: 1;
+}
+
+.img6 {
+	width: 45%;
+	height: auto;
+    left: 35%;
+    top: 50%;
+    transform: rotate(-20deg);
+    z-index: 1;
+}
+
+img:hover {
+    transform: rotate(0deg);
+    transform: scale(1.5);
+    box-shadow: 6px 6px 6px #656565;
+    z-index: 2;
+}
