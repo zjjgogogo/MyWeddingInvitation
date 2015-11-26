@@ -49,7 +49,7 @@ img {
 .img1 {
 	width: 30%;
 	height: auto;
-    left: 5%;
+    left: 15%;
     top: 5%;
     transform: rotate(30deg);
     z-index: 1;
@@ -58,8 +58,8 @@ img {
 .img2 {
 	width: 30%;
 	height: auto;
-    left: 30%;
-    top: 10%;
+    left: 15%;
+    top: 20%;
     transform: rotate(-30deg);
     z-index: 1;
 }
@@ -85,7 +85,7 @@ img {
 .img5 {
 	width: 35%;
 	height: auto;
-    left: 55%;
+    left: 50%;
     top: 40%;
     transform: rotate(-40deg);
     z-index: 1;
@@ -95,14 +95,23 @@ img {
 	width: 45%;
 	height: auto;
     left: 35%;
-    top: 50%;
+    top: 60%;
+    transform: rotate(-20deg);
+    z-index: 1;
+}
+
+.img7 {
+	width: 30%;
+	height: auto;
+    left: 15%;
+    top: 65%;
     transform: rotate(-20deg);
     z-index: 1;
 }
 
 img:hover {
     transform: rotate(0deg);
-    transform: scale(1.5);
+    transform: scale(2); 
     box-shadow: 6px 6px 6px #656565;
     z-index: 2;
 }
