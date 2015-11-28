@@ -4,10 +4,47 @@ body {
     padding-bottom: 20px;
 }
 
-.fullDiv {
-    text-align: center;
+.fullDiv { 
     width: 100%;
-    height: auto;
+    height: auto; 
+}
+
+.linear{   
+    width:100%;   
+    height:100%;   
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=##15A216,endColorStr=#fafafa); /*IE*/   
+    background:-moz-linear-gradient(top,#15A216,#fafafa);/*火狐*/   
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#15A216), to(#fafafa));/*谷歌*/   
+    background-image: -webkit-gradient(linear,left bottom,left top,color-start(0, #15A216),color-stop(1, #fafafa));/* Safari & Chrome*/  
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#15A216', endColorstr='#fafafa'); /*IE6 & IE7*/  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#15A216', endColorstr='#fafafa')"; /* IE8 */  
+  
+}   
+
+.content_area{ 
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;  
+    position: absolute;
+    padding: 10px 10px 80px;
+    background-color: #fff;
+    border: 1px solid #ddd;  
+    box-shadow: 1px 2px 1px #ddd;
+}
+
+.label{    
+    width: 60%;
+    color: #1c1c1c; 
+    position: absolute;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%; 
+    margin-top: 25px;
+    font-size: 20px; 
+    font-weight: bolder;
+    letter-spacing:3px;
+    text-shadow: 1px 2px 1px #cecece;
+    font-family: 黑体;
 }
 
 .gallery_pic1 {
@@ -34,7 +71,7 @@ container {
     margin: 0px auto;
 }
 
-img {
+.cardview{
     position: absolute;
     top: 50px;
     left: 100px;
@@ -109,7 +146,7 @@ img {
     z-index: 1;
 }
 
-img:hover {
+.cardview:hover {
     transform: rotate(0deg);
     transform: scale(2); 
     box-shadow: 6px 6px 6px #656565;
