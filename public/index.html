@@ -1,48 +1,237 @@
-<!doctype html>
-<html ng-app="mywedding">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <script src="js/angular.js"></script>
-    <script src="js/angular-touch.js"></script>
-    <script src="js/angular-animate.js"></script> 
-    <script src="lib/angular-route.js"></script>
-    <script src="js/mywedding.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/slideup.css">
-    <link rel="stylesheet" href="css/app.css">
-    <title>MyWeddingInvitation</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="   
-  
-        height =  device-height ,   
-  
-        width =  device-width ,   
-  
-        initial-scale = 1.0f ,   
-  
-        minimum-scale = 1.0f ,   
-  
-        maximum-scale = 1.0f ,   
-  
-        user-scalable =  no ,   
-  
-        target-densitydpi = device-dpi   
-  
-    " />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>卓竞劲与吴敬莲电子喜帖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="files/main.css" rel="stylesheet">
+    <link href="files/styles.css" type="text/css" rel="stylesheet">
 </head>
 
-<body ng-controller="IndexController" x>
-    <!--
-   <audio
-        src="media/bg_music.mp3" autoplay="autoplay" loop="loop" preload="auto">
-    </audio>
-    -->
+<body data-spy="scroll" data-target="#nzavbar" data-pinterest-extension-installed="cr1.39.1">
+    <section id="home">
+        <div class="stage">
+            <img src="files/144869847293.jpg" style="max-width:100%">
+        </div>
+    </section>
+    <section id="about">
+        <div class="separator top grey"></div>
+        <div class="inner">
+            <header>
+                <h2>真诚邀请</h2>
+            </header>
+            <div class="content">
+                <div class="third">
+                    <div class="block brain">
+                        <div class="content-wrapper">
+                            <div class="text">
+                                新郎：卓竞劲
+                                <br> 新娘：吴敬莲
+                                <br> 时间：12月18日下午 19点00分
+                                <br> 地点：广东省阳江市江城区东风三路38号景湖大酒店
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator bottom grey"></div>
+    </section>
+    <section id="awards">
+        <div class="separator top grey"></div>
+        <div class="inner">
+            <header>
+                <h2>我们的故事</h2>
+            </header>
+            <div class="content">
+                <div class="awards-slider">
+                    <div class="slide">
+                        <div class="image">
+                            <img src="files/onepagelove.png" alt="One Page Love">
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="text">
+                                <div>
+                                    <p></p>
+                                    <p>我们没有惊天动地的爱情故事，那么自然的相识、相知、相恋，虽然一路走来也有坎坷，但互相的信任与理解让我们一直走到今天
+                                        <br>
+                                        <br>我从未想着他能对我说什么惊天动地的誓言，再热烈的爱情，变成婚姻，终究要打磨成平凡的柴米油盐。我只是想，他能每天平平安安的，上班，下班，有空的时候可以陪着我，害怕的时候抱着我，危难的时候可以抓紧我的手不放开
+                                        <br>
+                                        <br>平淡，恬静而又安逸，自然，体态而又快乐，这就是我们所需要的幸福生活
+                                        <br>
+                                    </p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator bottom grey"></div>
+    </section>
+    <section id="portfolio">
+        <div class="inner">
+            <header>
+                <h2>我们的照片</h2>
+            </header>
+            <div class="works" id="Gallery">
+                <div>
+                    <img src="files/1448698479288.jpg" style=" width:100%;">
+                </div>
+                <div>
+                    <img src="files/1448698485665.jpg" style=" width:100%;">
+                </div>
+                <div>
+                    <img src="files/1448698491275.jpg" style=" width:100%;">
+                </div>
+                <div>
+                    <img src="files/1448698494976.jpg" style=" width:100%;">
+                </div>
+                <div>
+                    <img src="files/1448698500596.jpg" style=" width:100%;">
+                </div>
+                <div>
+                    <img src="files/1448698508730.jpg" style=" width:100%;">
+                </div>
+            </div>
+        </div>
+        <div class="separator bottom grey"></div>
+    </section>
+    <section id="address">
+        <div class="inner">
+            <header>
+                <h2>婚礼地图</h2>
+            </header>
+            <div class="works">
+                <div class="work">
+                    <a href="http://api.map.baidu.com/marker?location=21.866435,111.995093&zoom=10&title=%E5%A9%9A%E7%A4%BC%E4%BD%8D%E7%BD%AE&content=%E5%B9%BF%E4%B8%9C%E7%9C%81%E9%98%B3%E6%B1%9F%E5%B8%82%E6%B1%9F%E5%9F%8E%E5%8C%BA%E4%B8%9C%E9%A3%8E%E4%B8%89%E8%B7%AF38%E5%8F%B7%E6%99%AF%E6%B9%96%E5%A4%A7%E9%85%92%E5%BA%97&output=html" target="_blank">
+                        <img src="files/staticimage">
+                    </a>
+                    <br/>
+                    <a href="http://api.map.baidu.com/marker?location=21.866435,111.995093&zoom=10&title=%E5%A9%9A%E7%A4%BC%E4%BD%8D%E7%BD%AE&content=%E5%B9%BF%E4%B8%9C%E7%9C%81%E9%98%B3%E6%B1%9F%E5%B8%82%E6%B1%9F%E5%9F%8E%E5%8C%BA%E4%B8%9C%E9%A3%8E%E4%B8%89%E8%B7%AF38%E5%8F%B7%E6%99%AF%E6%B9%96%E5%A4%A7%E9%85%92%E5%BA%97&output=html" target="_blank">
+                          广东省阳江市江城区东风三路38号景湖大酒店
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="separator bottom grey"></div>
+    </section>
+    <section id="contacts">
+        <div class="inner">
+            <header>
+                <h2>欢迎您的到来</h2>
+            </header>
+            <div class="content">
+                <div class="half end">
+                    <div class="contact-form">
+                        <form id="contact2" action="" method="post">
+                            <input name="name" id="username" class="input" type="text" placeholder="您的名字" required="" />
+                            <input name="phone" id="phone" type="text" class="input" placeholder="您的手机号码"></input>
+                            <input name="num" id="num" type="number" class="input" min="1" placeholder="参加人数"></input>
+                            <input type="button" id="send_message" value="发送" name="submit" class="button animated" />
+                            <div id="response"></div>
+                        </form>
+                    </div>
+                    <div class="jobs-link" id="sendmsg_success"></div>
+                </div>
+            </div>
+        </div>
+        <div class="separator bottom grey"></div>
+    </section>
+    <script src="files/jquery.min.js"></script>
+    <!-- 播放音乐 -->
+    <script>
+    (function(a, b, c) {
+        if (c in b && b[c]) {
+            var d, e = a.location,
+                f = /^(a|html)$/i;
+            a.addEventListener("click", function(a) {
+                d = a.target;
+                while (!f.test(d.nodeName)) d = d.parentNode;
+                "href" in d && (d.href.indexOf("http") || ~d.href.indexOf(e.host)) && (a.preventDefault(), e.href = d.href)
+            }, !1)
+        }
+    })(document, window.navigator, "standalone")
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
 
-    <div class="linear"></div>
-  
-    
+        $(document).one('touchstart', function(e) {
+            var music = document.getElementById("audio_play");
+            if (music.paused) {
+                music.play();
+            }
+        });
 
+    });
+
+    function play_music() {
+        if ($('#mc_play').hasClass('on')) {
+            $('#mc_play audio').get(0).pause();
+            $('#mc_play').attr('class', 'stop');
+        } else {
+            $('#mc_play audio').get(0).play();
+            $('#mc_play').attr('class', 'on');
+        }
+    }
+    </script>
+    <span id="musicControl">
+    <a id="mc_play" class="on" onclick="play_music();">
+        <audio autoplay="autoplay" id="audio_play" loop="">
+                <source src="files/LoveParadise.mp3" type="audio/mpeg">
+        </audio>
+    </a>   
+</span>
+    <!-- 发送留言 -->
+    <script>
+    $(function() {
+        $('#send_message').bind('click', function() {
+            var name = $('#username').val();
+            if (name == '' || name == '您的名字') {
+                $('#sendmsg_success').html('请填写您的姓名').show();
+                return;
+            }
+            var phone = $('#phone').val();
+            if (phone == '' || phone == '请输入您的手机号码') {
+                $('#sendmsg_success').html('输入您的手机号码').show();
+                return;
+            } else {
+                var re = /^1\d{10}$/
+                if (!re.test(phone)) {
+                    $('#sendmsg_success').html('请输入正确的手机号').show();
+                    return;
+                }
+            }
+
+            var num = $('#num').val();
+            if (num == '' || num == '参加人数') {
+                $('#sendmsg_success').html('请输入参加人数').show();
+                return;
+            } else {
+                var numValue = Number(num);
+                if (num < 1) {
+                    $('#sendmsg_success').html('请输入正确的参加人数').show();
+                    return;
+                }
+            }
+
+            $.post('http://localhost:3000/wedding/contacts', {
+                name: name,
+                phone: phone,
+                num: num
+            }, function(data) {
+                $('#username').val('');
+                $('#phone').val('');
+                $('#num').val('');
+                $('#sendmsg_success').html('您的信息已成功发送').show();
+            });
+        });
+    });
+    </script>
+    <!-- 留言列表 -->
 </body>
 
 </html>
