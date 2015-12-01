@@ -1,6 +1,66 @@
 body {
-    background: #2b2b2b;
+    background: #eee;
     margin: 0px;
+}
+
+.divider1 {
+    width: 100%;
+    padding-bottom: 40%;
+    background: rgb(187,39,41);
+    position: relative;
+}
+
+.divider2 {
+    width: 100%;
+    padding-bottom: 40%;
+    background: rgb(222,123,76);
+    position: relative;
+}
+
+.divider3 {
+    width: 100%;  
+    position: relative;
+}
+
+.divider4 {
+    width: 100%;
+    padding-bottom: 40%;
+    background: rgb(115,87,161);
+    position: relative;
+}
+
+.divider_top {
+    background: transparent url('divider_top.png') repeat-x 0 bottom;
+    top: 0px;
+    width: 100%;
+    height: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+.divider_img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.divider_text {
+    position: absolute;
+    width: 100%;
+    bottom: 15%;
+    font-size: 25px;
+    text-align: center;
+    color: #fdfdfd;
+    text-shadow: 2px 2px 2px #2c2c2c;
+}
+
+.divider_bottom {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: transparent url('divider_bottom.png') repeat-x 0 top;
+    bottom: 0px;
+    z-index: 1;
 }
 
 .home {
@@ -104,39 +164,151 @@ body {
 
 .story {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.story .image_container {
+    margin-top: 5%;
 }
 
 .story .image {
     width: 90%;
-    margin-top: 5%;
-    border: 10px solid #fff;
-    border-radius: 5px;
+    border: 10px double rgb(60, 121, 178); 
+}
+
+.story .image2 {
+    width: 90%;
+    border: 10px double rgb(228, 157, 158); 
+}
+
+.story .image3 {
+    width: 90%;
+    border: 10px double rgb(231, 217, 26);
+}
+
+.story .image4 {
+    width: 90%;
+    border: 10px double rgb(232, 52, 85);
+}
+
+.story .image5 {
+    width: 90%;
+    border: 10px double rgb(169, 205, 34);
+}
+
+.story .image6 {
+    width: 90%;
+    border: 10px double rgb(189, 121, 61);
+}
+
+.intro {
+    background: rgb(39, 40, 34);
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.intro .text {
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 18px;
 }
 
 .address {
-    margin-top: 10%;
     background: #fff;
     text-align: center;
     padding-bottom: 10%;
-    padding-top:5%;
+    padding-top: 5%;
+    font-family: '华文仿宋', sans-serif;
 }
 
 .address .title {
     color: #000;
-    text-align: center;
     font-size: 25px;
 }
 
-.address.works{
-	 margin: 0 auto;
+.address .works {
+    margin: 0 auto;
+}
+
+.address .text {
+    font-size: 16px;
+    text-align: left;
+    margin: 5px;
+}
+
+.address a:link,
+.address a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.address a:hover,
+.address a:active {
+    color: #000000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    text-decoration: underline;
+}
+
+.address .work {
+    margin-top: 5%;
+}
+
+.address .image {
+    width: 90%;
+    border: 5px solid #484848;
+}
+
+.address .button {
+    border: 0;
+    background: #f5c400;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 25px 9px;
+    font-weight: 700;
+    letter-spacing: 0;
+    -webkit-transition: background .3s ease;
+    -moz-transition: background .3s ease;
+    transition: background .3s ease;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 4px 0 #997a00, inset 0 -1px 0 rgba(255, 255, 255, .15), 0 6px 6px 1px rgba(0, 0, 0, .5);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 4px 0 #997a00, inset 0 -1px 0 rgba(255, 255, 255, .15), 0 6px 6px 1px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 4px 0 #997a00, inset 0 -1px 0 rgba(255, 255, 255, .15), 0 6px 6px 1px rgba(0, 0, 0, .5);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .8)
+}
+
+.address .button:hover,
+.address .button:active {
+    background: #fc0
+}
+
+.address .button:active {
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(255, 255, 255, .15), 0 0 0 #fff;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(255, 255, 255, .15), 0 0 0 #fff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(255, 255, 255, .15), 0 0 0 #fff;
+    outline: 0;
+    margin-top: 9px
 }
 
 .contact {
-    margin-top: 20%; 
+    padding-top: 5%;
     width: 100%;
     text-align: center;
     padding-bottom: 10%;
+    background: #2b2b2b;
+    font-family: '华文仿宋', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -154,7 +326,7 @@ body {
 
 .contact .contact-form input {
     display: block;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 @media only screen and (min-width: 1258px) {
@@ -178,14 +350,12 @@ body {
     zoom: 1
 }
 
-.contact .contact-form .input,
-.contact .contact-form textarea {
+.contact .contact-form .input {
     border: 0;
     background: rgba(0, 0, 0, .5);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
     line-height: 29px;
     padding: 5px;
