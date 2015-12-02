@@ -102,13 +102,13 @@
         </div>
     </div>
     <div class="divider3" id="divider3">
-        <div class="divider_top"></div> 
+        <div class="divider_top"></div>
         <img class="divider_img" src="files/d3.jpg" id="divider3_img">
         <div class="divider_bottom"></div>
     </div>
     <div class="contact">
-        <div class="content"> 
-            <h2 class="title">诚邀您的莅临</h2> 
+        <div class="content">
+            <h2 class="title">诚邀您的莅临</h2>
             <div class="contact-form">
                 <form id="contact2" action="" method="post">
                     <input name="name" id="username" class="input" type="text" placeholder="您的名字" required="" />
@@ -121,13 +121,19 @@
             <div class="jobs-link" id="sendmsg_success"></div>
         </div>
     </div>
+    <div class="divider5">
+        <div class="divider_top"></div>
+        <author>
+            Designed by <b>JamesJaw</b>
+        </author>
+        <div class="divider_bottom"></div>
+    </div>
     <script src="files/jquery.min.js"></script>
-
     <script type="text/javascript">
     var target = document.getElementById("total");
     var targetContent = document.getElementById("home-content-text");
     var centerImage1 = document.getElementById("home-center-image1");
-    var centerImage2 = document.getElementById("home-center-image2"); 
+    var centerImage2 = document.getElementById("home-center-image2");
 
     var targetHForContent = targetContent.offsetHeight * 1.25;
 
@@ -153,7 +159,6 @@
     centerImage1.style.bottom = targetImageBottom + 'px';
     centerImage2.style.bottom = targetImageBottom + 'px';
     </script>
-
     <!-- 播放音乐 -->
     <script>
     (function(a, b, c) {
@@ -189,12 +194,12 @@
             $('#mc_play').attr('class', 'on');
         }
     }
-    </script> 
+    </script>
     <a id="mc_play" class="on" onclick="play_music();">
         <audio autoplay="autoplay" id="audio_play" loop="">
-                <source src="files/demo.mp3" type="audio/mpeg">
+            <source src="files/demo.mp3" type="audio/mpeg">
         </audio>
-    </a>    
+    </a>
     <!-- 发送留言 -->
     <script>
     $(function() {
