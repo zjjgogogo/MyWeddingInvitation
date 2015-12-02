@@ -145,7 +145,7 @@ body {
 }
 
 .home .content_border_bottom {
-    height: 0.;
+    height: 0.625rem;
     width: 100%;
     background: #d1221a;
     position: absolute;
