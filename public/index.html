@@ -127,8 +127,7 @@
     var target = document.getElementById("total");
     var targetContent = document.getElementById("home-content-text");
     var centerImage1 = document.getElementById("home-center-image1");
-    var centerImage2 = document.getElementById("home-center-image2");
-    var divider3Img = document.getElementById("divider3_img");
+    var centerImage2 = document.getElementById("home-center-image2"); 
 
     var targetHForContent = targetContent.offsetHeight * 1.25;
 
@@ -146,9 +145,11 @@
 
     var targetH = target.offsetWidth * 1138 / 640;
 
+    var divider3ImgHeight = target.offsetWidth * 533 / 800;
+
     document.getElementById("home-container").style.height = targetH + 'px';
     document.getElementById("home-content").style.height = targetHForContent + 'px';
-    document.getElementById("divider3").style.height = divider3Img.offsetHeight + 'px';
+    document.getElementById("divider3").style.height = divider3ImgHeight + 'px';
     centerImage1.style.bottom = targetImageBottom + 'px';
     centerImage2.style.bottom = targetImageBottom + 'px';
     </script>
