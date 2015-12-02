@@ -5,7 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cloud = require('./cloud');
-var dataController = require('./LeancloudDataController');
+var dataController = require('./LeanCloudDataController');
 
 var app = express();
 
