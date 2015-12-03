@@ -15,7 +15,7 @@
             <audio autoplay="autoplay" id="audio_play" loop="">
                 <source src="files/demo.mp3" type="audio/mpeg">
             </audio>
-            <img src="files/wedding_music.png" style="top:5%;right:30%;position:fixed;width:10%;height:auto;z-index:999;" id="music_btn" />
+            <img src="files/wedding_music.png" class="musicbtn_on" id="music_btn" />
         </a>
         <div class="home">
             <div id="home-container">
@@ -169,12 +169,15 @@
         if ($('#mc_play').hasClass('on')) {
             $('#mc_play audio').get(0).pause();
             $('#mc_play').attr('class', 'stop');
-            musicBtn.src = 'files/wedding_music_disable.png';
+            musicBtn.src = 'files/wedding_music_disable.png'; 
+            $('#music_btn').attr('class','musicbtn_off');
 
         } else {
             $('#mc_play audio').get(0).play();
             $('#mc_play').attr('class', 'on');
-             musicBtn.src = 'files/wedding_music.png';
+             musicBtn.src = 'files/wedding_music.png'; 
+            $('#music_btn').attr('class','musicbtn_on');
+
         }
     }
     </script>

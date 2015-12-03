@@ -86,7 +86,7 @@
     z-index: 2;
 }
 
-.home .heart{
+.home .heart {
     width: 1.5rem;
     height: auto;
 }
@@ -202,25 +202,25 @@
 }
 
 .story .image {
-    width: 97.5%; 
+    width: 97.5%;
     border: 0.05em solid #000;
 }
 
 .intro {
     background: rgb(242, 230, 236);
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-top: 1rem;
-    padding-bottom: 5%; 
+    padding-bottom: 5%;
     position: relative;
 }
 
-.intro .arrow { 
+.intro .arrow {
     top: -0.75rem;
     width: 2rem;
     height: auto;
-    left: 50%; 
+    left: 50%;
     margin-left: -1rem;
-    position: absolute; 
+    position: absolute;
 }
 
 .intro .text {
@@ -230,7 +230,7 @@
     padding: 0.75rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: rgb(212,185,203);
+    background: rgb(212, 185, 203);
     color: #080808;
     font-size: 0.875rem;
     letter-spacing: 0.05rem;
@@ -435,7 +435,7 @@
     font-size: 1rem;
     letter-spacing: 0;
     color: #eee;
-    position: absolute; 
+    position: absolute;
     top: 40%;
     text-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, .8)
 }
@@ -447,4 +447,48 @@
     font-size: 1.250rem;
     color: #cc0000;
     text-shadow: 0 0.05rem 0.05rem rgba(255, 255, 255, .8)
+}
+
+.musicbtn_on {
+    top: 5%;
+    right: 30%;
+    position: fixed;
+    width: 10%;
+    height: auto;
+    z-index: 999;
+    animation: rotateAnim 5s linear infinite;
+    -webkit-animation: rotateAnim 5s linear infinite;
+}
+
+.musicbtn_off {
+    top: 5%;
+    right: 30%;
+    position: fixed;
+    width: 10%;
+    height: auto;
+    z-index: 999;
+}
+
+@-webkit-keyframes rotateAnim {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
