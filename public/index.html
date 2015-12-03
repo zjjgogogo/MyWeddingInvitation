@@ -11,12 +11,12 @@
 
 <body style="background:#2b2b2b">
     <div id="total" style="width:50%;height:auto;left:25%;position:relative;">
-        <a id="mc_play" class="on" onclick="play_music();">
+        <div id="mc_play" class="on" onclick="play_music();">
             <audio autoplay="autoplay" id="audio_play" loop="">
                 <source src="files/demo.mp3" type="audio/mpeg">
             </audio>
             <img src="files/wedding_music.png" class="musicbtn_on" id="music_btn" />
-        </a>
+        </div>
         <div class="home">
             <div id="home-container">
                 <img class="image_bg" src="files/a1.jpg"></img>
@@ -111,7 +111,7 @@
     var isBigScreen = 0;
     if (screenW < 720) {
         target.style.width = '100%';
-        musicBtn.style.width = '10%';
+        musicBtn.style.width = '15%';
     } else {
         target.style.width = '50%';
         musicBtn.style.width = '5%';
