@@ -449,11 +449,20 @@
     text-shadow: 0 0.05rem 0.05rem rgba(255, 255, 255, .8)
 }
 
-.musicbtn_on {
+.musicbtn_default {
     top: 5%;
-    right: 30%;
+    right: 5%;
     position: fixed;
-    width: 10%;
+    width: 15%;
+    height: auto;
+    z-index: 999;
+    animation: rotateAnim 5s linear infinite;
+    -webkit-animation: rotateAnim 5s linear infinite;
+}
+
+.musicbtn_on {
+    top: 5%; 
+    position: fixed; 
     height: auto;
     z-index: 999;
     animation: rotateAnim 5s linear infinite;
@@ -461,9 +470,8 @@
 }
 
 .musicbtn_off {
-    top: 5%;
-    right: 30%;
-    position: fixed; 
+    top: 5%; 
+    position: fixed;
     height: auto;
     z-index: 999;
 }
