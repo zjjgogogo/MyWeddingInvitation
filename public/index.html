@@ -11,6 +11,12 @@
 
 <body style="background:#2b2b2b">
     <div id="total" style="width:50%;height:auto;left:25%;position:relative;">
+        <a id="mc_play" class="on" onclick="play_music();">
+            <audio autoplay="autoplay" id="audio_play" loop="">
+                <source src="files/demo.mp3" type="audio/mpeg">
+            </audio>
+            <img src="files/wedding_music.png" style="top:5%;right:30%;position:fixed;width:10%;height:auto;z-index:999;" id="music_btn" />
+        </a>
         <div class="home">
             <div id="home-container">
                 <img class="image_bg" src="files/a1.jpg"></img>
@@ -101,11 +107,14 @@
     var screenW = window.screen.width;
     var totalWidth;
     var target = document.getElementById("total");
+    var musicBtn = document.getElementById("music_btn");
     var isBigScreen = 0;
     if (screenW < 720) {
         target.style.width = '100%';
+        musicBtn.style.width = '10%';
     } else {
         target.style.width = '50%';
+        musicBtn.style.width = '5%';
         isBigScreen = 1;
     }
 
@@ -113,8 +122,10 @@
 
     if (isBigScreen == 1) {
         target.style.left = '25%';
+        musicBtn.style.right = '27.5%';
     } else {
         target.style.left = '0px';
+        musicBtn.style.right = '5%';
     }
 
     var targetContent = document.getElementById("home-content-text");
@@ -153,20 +164,20 @@
     });
 
     function play_music() {
+
+        var musicBtn = document.getElementById("music_btn");
         if ($('#mc_play').hasClass('on')) {
             $('#mc_play audio').get(0).pause();
             $('#mc_play').attr('class', 'stop');
+            musicBtn.src = 'files/wedding_music_disable.png';
+
         } else {
             $('#mc_play audio').get(0).play();
             $('#mc_play').attr('class', 'on');
+             musicBtn.src = 'files/wedding_music.png';
         }
     }
     </script>
-    <a id="mc_play" class="on" onclick="play_music();">
-        <audio autoplay="autoplay" id="audio_play" loop="">
-            <source src="files/demo.mp3" type="audio/mpeg">
-        </audio>
-    </a>
     <!-- 发送留言 -->
     <script>
     $(function() {
