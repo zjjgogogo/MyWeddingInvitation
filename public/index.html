@@ -10,7 +10,7 @@
     <link href="files/app.css" rel="stylesheet">
 </head>
 
-<body style="background:#2b2b2b">
+<body style="background:#2b2b2b" id="all">
     <div id="total" style="width:100%;height:auto;left:0%;position:relative;">
         <div id="mc_play" class="on" onclick="play_music();" style="position:absolute;top:0px;">
             <audio autoplay="autoplay" id="audio_play" loop="">
@@ -29,7 +29,7 @@
                     <div class="text" id="home-content-text">
                         <div class="name">卓竞劲 <img src="files/Heart.png" class="heart"/> 吴敬莲 </div>
                         <br/>婚礼日期:&nbsp; 2015年12月18日(公历)
-                        <br/>婚礼时间:&nbsp; 19:00
+                        <br/>婚礼时间:&nbsp; 下午6时
                         <br/>婚礼地址: 广东省阳江市江城区东风三路38号景湖大酒店
                     </div>
                 </div>
@@ -106,15 +106,16 @@
     <script src="files/jquery.min.js"></script>
     <script type="text/javascript">
 
-    var screenW = window.screen.width;
+    var screenW = document.getElementById("all").offsetWidth;
     var totalWidth; 
     var target = document.getElementById("total");
     var musicBtn = document.getElementById("music_btn");
     var isBigScreen = 0;
-    if (screenW < 720) {
+    if (screenW <= 1080) {
         target.style.width = '100%';
         musicBtn.style.width = '15%';
-    } else {
+    }
+     else {
         target.style.width = '50%';
         musicBtn.style.width = '5%';
         isBigScreen = 1;
