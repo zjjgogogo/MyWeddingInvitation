@@ -4,14 +4,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>卓竞劲与吴敬莲电子喜帖</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>卓竞劲与吴敬莲电子喜帖</title>
+    <meta name="Description" content="那天的初遇，到现在的相守。莫理明和张家欣诚邀您于2015年12月5日，在阳江东珠大酒店见证我们的婚礼。期待您的来临～">
     <link href="files/app.css" rel="stylesheet">
 </head>
 
 <body style="background:#2b2b2b">
-    <div id="total" style="width:50%;height:auto;left:25%;position:relative;">
-        <div id="mc_play" class="on" onclick="play_music();" style="position: absolute;top:0px;">
+    <div id="total" style="width:100%;height:auto;left:0%;position:relative;">
+        <div id="mc_play" class="on" onclick="play_music();" style="position:absolute;top:0px;">
             <audio autoplay="autoplay" id="audio_play" loop="">
                 <source src="files/demo.mp3" type="audio/mpeg">
             </audio>
@@ -104,8 +105,9 @@
     </div>
     <script src="files/jquery.min.js"></script>
     <script type="text/javascript">
+
     var screenW = window.screen.width;
-    var totalWidth;
+    var totalWidth; 
     var target = document.getElementById("total");
     var musicBtn = document.getElementById("music_btn");
     var isBigScreen = 0;
@@ -117,8 +119,6 @@
         musicBtn.style.width = '5%';
         isBigScreen = 1;
     }
-
-
 
     if (isBigScreen == 1) {
         target.style.left = '25%';
@@ -136,6 +136,7 @@
 
     document.getElementById("home-container").style.height = targetH + 'px';
     document.getElementById("home-content").style.height = targetHForContent + 'px';
+
     </script>
     <!-- 播放音乐 -->
     <script>
