@@ -1,38 +1,49 @@
-body {
-    background: #eee;
+#total {
+    background: rgb(242, 230, 236);
     margin: 0px;
 }
 
 .divider1 {
     width: 100%;
-    padding-bottom: 40%;
-    background: rgb(187,39,41);
+    padding-bottom: 3rem;
+    background: rgb(220, 137, 192);
     position: relative;
 }
 
 .divider2 {
     width: 100%;
-    padding-bottom: 40%;
-    background: rgb(222,123,76);
+    padding-bottom: 3rem;
+    background: rgb(220, 137, 192);
     position: relative;
 }
 
 .divider3 {
-    width: 100%;  
+    width: 100%;
     position: relative;
 }
 
+.split_box {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    background: rgb(220, 137, 192);
+    background-size: 100% auto;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+}
+
 .divider5 {
-    width: 100%; 
-    padding-bottom: 10%;
-    background: rgb(108,79,47);
+    width: 100%;
+    padding-bottom: 2.5rem;
+    background: rgb(220, 137, 192);
     position: relative;
 }
 
 .divider4 {
     width: 100%;
-    padding-bottom: 40%;
-    background: rgb(115,87,161);
+    padding-bottom: 3rem;
+    background: rgb(220, 137, 192);
     position: relative;
 }
 
@@ -45,7 +56,7 @@ body {
     position: absolute;
 }
 
-.divider_img{
+.divider_img {
     width: 100%;
     height: auto;
     position: absolute;
@@ -54,11 +65,11 @@ body {
 .divider_text {
     position: absolute;
     width: 100%;
-    bottom: 15%;
-    font-size: 1.5rem;
+    bottom: 1em;
+    font-size: 2rem;
     text-align: center;
     color: #fdfdfd;
-    text-shadow:  0.1rem 0.1rem 0.1rem #2c2c2c;
+    text-shadow: 0.1rem 0.1rem 0.1rem #2c2c2c;
 }
 
 .divider_bottom {
@@ -75,11 +86,16 @@ body {
     z-index: 2;
 }
 
+.home .heart{
+    width: 1.5rem;
+    height: auto;
+}
+
 .home .image_top {
     width: 55%;
     height: auto;
-    left: 5%;
-    top: 6rem;
+    left: 4%;
+    top: 15%;
     z-index: 1;
     position: absolute;
 }
@@ -134,27 +150,27 @@ body {
 }
 
 .home .content_bg {
-    background: #fff;
-    filter: alpha(opacity=50);
-    -moz-opacity: 0.5;
-    -khtml-opacity: 0.5;
+    background: rgb(242, 230, 236);
+    filter: alpha(opacity=40);
+    -moz-opacity: 0.4;
+    -khtml-opacity: 0.4;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.4;
     position: absolute;
 }
 
 .home .content_border {
     height: 0.625rem;
     width: 100%;
-    background: #d1221a;
+    background: rgb(220, 137, 192);
     position: absolute;
 }
 
 .home .content_border_bottom {
     height: 0.625rem;
     width: 100%;
-    background: #d1221a;
+    background: rgb(220, 137, 192);
     position: absolute;
     bottom: 0px;
 }
@@ -169,68 +185,63 @@ body {
     position: absolute;
 }
 
+.home .text .name {
+    text-align: center;
+    font-size: 1.5em;
+}
+
 .story {
+    background: rgb(242, 230, 236);
     text-align: center;
     margin-top: 5%;
     padding-bottom: 5%;
 }
 
 .story .image_container {
-    margin-top: 5%;
+    margin-top: 1.25%;
 }
 
 .story .image {
-    width: 90%;
-    border: 0.625rem double rgb(60, 121, 178); 
-}
-
-.story .image2 {
-    width: 90%;
-    border: 0.625rem double rgb(228, 157, 158); 
-}
-
-.story .image3 {
-    width: 90%;
-    border: 0.625rem double rgb(231, 217, 26);
-}
-
-.story .image4 {
-    width: 90%;
-    border: 0.625rem double rgb(232, 52, 85);
-}
-
-.story .image5 {
-    width: 90%;
-    border: 0.625rem double rgb(169, 205, 34);
-}
-
-.story .image6 {
-    width: 90%;
-    border: 0.625rem double rgb(189, 121, 61);
+    width: 97.5%; 
+    border: 0.05em solid #000;
 }
 
 .intro {
-    background: rgb(39, 40, 34);
-    margin: 0 auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    background: rgb(242, 230, 236);
+    margin: 0 auto; 
+    margin-top: 1rem;
+    padding-bottom: 5%; 
+    position: relative;
+}
+
+.intro .arrow { 
+    top: -0.75rem;
+    width: 2rem;
+    height: auto;
+    left: 50%; 
+    margin-left: -1rem;
+    position: absolute; 
 }
 
 .intro .text {
     text-align: left;
     margin: 0 auto;
     width: 90%;
-    color: #fff;
-    font-size: 1.063rem;
+    padding: 0.75rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: rgb(212,185,203);
+    color: #080808;
+    font-size: 0.875rem;
     letter-spacing: 0.05rem;
-    line-height: 1.18rem;
+    line-height: 1.25rem;
 }
 
 .address {
-    background: #fff;
+    background: rgb(242, 230, 236);
     text-align: center;
-    padding-bottom: 10%;
-    padding-top: 5%;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
     font-family: '华文仿宋', sans-serif;
 }
 
@@ -246,6 +257,7 @@ body {
 .address .text {
     font-size: 1rem;
     text-align: left;
+    line-height: 1.3rem;
     margin: 0.3rem;
 }
 
@@ -266,22 +278,22 @@ body {
 }
 
 .address .work {
-    margin-top: 5%;
+    margin-top: 0.325rem;
 }
 
 .address .image {
     width: 90%;
-    border: 0.3rem solid #484848;
+    border: 0.05rem solid rgb(222, 230, 236);
 }
 
 .address .button {
     border: 0;
-    background: #f5c400;
+    background: rgb(220, 137, 192);
     -webkit-border-radius: 0.12rem;
     -moz-border-radius: 0.12rem;
     border-radius: 0.12rem;
     text-transform: uppercase;
-    color: #222;
+    color: #fff;
     font-size: 1rem;
     line-height: 1.48rem;
     padding: 0.625rem 1.5rem 0.563rem;
@@ -290,21 +302,21 @@ body {
     -webkit-transition: background .3s ease;
     -moz-transition: background .3s ease;
     transition: background .3s ease;
-    -webkit-box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), 0 0.2rem 0 #997a00, inset 0 -0.05rem  0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem  rgba(0, 0, 0, .5);
-    -moz-box-shadow: inset 0 0.05rem  0 rgba(255, 255, 255, .2), 0 0.2rem 0 #997a00, inset 0 -0.05rem  0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem  rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0.05rem  0 rgba(255, 255, 255, .2), 0 0.2rem 0 #997a00, inset 0 -0.05rem  0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem  rgba(0, 0, 0, .5);
-    text-shadow: 0 0.05rem  0.05rem  rgba(255, 255, 255, .8)
+    -webkit-box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), 0 0.2rem 0 rgb(222, 230, 236), inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem rgba(0, 0, 0, .5);
+    -moz-box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), 0 0.2rem 0 rgb(222, 230, 236), inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), 0 0.2rem 0 rgb(220, 137, 192), inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem rgba(0, 0, 0, .5);
+    text-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, .8);
 }
 
 .address .button:hover,
 .address .button:active {
-    background: #fc0
+    background: rgb(220, 137, 192)
 }
 
 .address .button:active {
-    -webkit-box-shadow: inset 0 0.05rem  0 rgba(255, 255, 255, .2), inset 0 -0.05rem  0 rgba(255, 255, 255, .15), 0 0 0 #fff;
-    -moz-box-shadow: inset 0 0.05rem  0 rgba(255, 255, 255, .2), inset 0 -0.05rem  0 rgba(255, 255, 255, .15), 0 0 0 #fff;
-    box-shadow: inset 0 0.05rem  0 rgba(255, 255, 255, .2), inset 0 -0.05rem  0 rgba(255, 255, 255, .15), 0 0 0 #fff;
+    -webkit-box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0 0 #fff;
+    -moz-box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0 0 #fff;
+    box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0 0 #fff;
     outline: 0;
     margin-top: 0.563rem;
 }
@@ -314,15 +326,16 @@ body {
     width: 100%;
     text-align: center;
     padding-bottom: 5%;
-    background: #2b2b2b;
+    background: rgb(242, 230, 236);
     font-family: '华文仿宋', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
 .contact .title {
-    color: #fff;
+    color: #383838;
     text-align: center;
     font-size: 1.5rem;
+    text-shadow: 0 0.05rem 0.05rem rgba(200, 200, 200, .8)
 }
 
 .contact .content {
@@ -358,8 +371,7 @@ body {
 }
 
 .contact .contact-form .input {
-    border: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgb(245, 245, 245);
     -webkit-border-radius: 0.12rem;
     -moz-border-radius: 0.12rem;
     border-radius: 0.12rem;
@@ -367,9 +379,9 @@ body {
     line-height: 1.75rem;
     padding: 0.3rem;
     margin-bottom: 1.25rem;
-    color: #fff;
+    color: #383838;
     width: 100%;
-    border: 0.05rem solid transparent;
+    border: 0.05rem solid #585858;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
@@ -378,12 +390,12 @@ body {
 
 .contact .contact-form .button {
     border: 0;
-    background: #f5c400;
+    background: rgb(220, 137, 192);
     -webkit-border-radius: 0.12rem;
     -moz-border-radius: 0.12rem;
     border-radius: 0.12rem;
     text-transform: uppercase;
-    color: #222;
+    color: #fff;
     font-size: 1rem;
     line-height: 1.48rem;
     padding: 0.625rem 1.5rem 0.563rem;
@@ -396,12 +408,12 @@ body {
     -webkit-box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), 0 0.2rem 0 #997a00, inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem rgba(0, 0, 0, .5);
     -moz-box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), 0 0.2rem 0 #997a00, inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0.05rem 0 rgba(255, 255, 255, .2), 0 0.2rem 0 #997a00, inset 0 -0.05rem 0 rgba(255, 255, 255, .15), 0 0.375rem 0.375rem 0.05rem rgba(0, 0, 0, .5);
-    text-shadow: 0 0.05rem 0.05rem rgba(255, 255, 255, .8)
+    text-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, .8)
 }
 
 .contact .contact-form .button:hover,
 .contact .contact-form .button:active {
-    background: #fc0
+    background: rgb(220, 137, 192);
 }
 
 .contact .contact-form .button:active {
@@ -417,15 +429,15 @@ body {
     float: left
 }
 
-author{
-     float: left;
-     margin-left: 2.5%;  
-     font-size: 1rem;
-     letter-spacing: 0;
-     color: #eee;
-     position: absolute;   
-     margin-top: -0.5rem;
-     top: 50%;
+.author {
+    float: left;
+    margin-left: 2.5%;
+    font-size: 1rem;
+    letter-spacing: 0;
+    color: #eee;
+    position: absolute; 
+    top: 40%;
+    text-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, .8)
 }
 
 .contact .jobs-link {
@@ -433,5 +445,6 @@ author{
     margin-top: 2.5rem;
     margin-bottom: 0.3rem;
     font-size: 1.250rem;
-    color: #cc0000;text-shadow: 0 0.05rem 0.05rem rgba(255, 255, 255, .8)
+    color: #cc0000;
+    text-shadow: 0 0.05rem 0.05rem rgba(255, 255, 255, .8)
 }
