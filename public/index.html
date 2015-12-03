@@ -11,7 +11,7 @@
 
 <body style="background:#2b2b2b">
     <div id="total" style="width:50%;height:auto;left:25%;position:relative;">
-        <div id="mc_play" class="on" onclick="play_music();">
+        <div id="mc_play" class="on" onclick="play_music();" style="position: absolute;top:0px;">
             <audio autoplay="autoplay" id="audio_play" loop="">
                 <source src="files/demo.mp3" type="audio/mpeg">
             </audio>
@@ -169,19 +169,19 @@
         if ($('#mc_play').hasClass('on')) {
             $('#mc_play audio').get(0).pause();
             $('#mc_play').attr('class', 'stop');
-            musicBtn.src = 'files/wedding_music_disable.png'; 
-            $('#music_btn').attr('class','musicbtn_off');
+            musicBtn.src = 'files/wedding_music_disable.png';
+            $('#music_btn').attr('class', 'musicbtn_off');
 
         } else {
             $('#mc_play audio').get(0).play();
             $('#mc_play').attr('class', 'on');
-             musicBtn.src = 'files/wedding_music.png'; 
-            $('#music_btn').attr('class','musicbtn_on');
+            musicBtn.src = 'files/wedding_music.png';
+            $('#music_btn').attr('class', 'musicbtn_on');
 
         }
     }
     </script>
-    <!-- 发送留言 -->
+    <!-- 发送信息 -->
     <script>
     $(function() {
         $('#send_message').bind('click', function() {
@@ -223,6 +223,8 @@
                 $('#phone').val('');
                 $('#num').val('');
                 $('#sendmsg_success').html('您的信息已成功发送').show();
+            }).error(function() {
+                $('#sendmsg_success').html('发送失败').show();
             });
         });
     });
