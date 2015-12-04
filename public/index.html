@@ -27,7 +27,7 @@
                     <div class="content_bg">
                     </div>
                     <div class="text" id="home-content-text">
-                        <div class="name">卓竞劲 <img src="files/Heart.png" class="heart"/> 吴敬莲 </div>
+                        <div class="name">卓竞劲 <img src="files/Heart.png" class="heart" /> 吴敬莲 </div>
                         <br/>婚礼日期:&nbsp; 2015年12月18日(公历)
                         <br/>婚礼时间:&nbsp; 下午6时
                         <br/>婚礼地址: 广东省阳江市江城区东风三路38号景湖大酒店
@@ -104,21 +104,17 @@
         </div>
     </div>
     <script src="files/jquery.min.js"></script>
-    <script type="text/javascript">
-
-    var screenW = document.getElementById("all").offsetWidth;
-    var totalWidth; 
+    <script type="text/javascript">  
     var target = document.getElementById("total");
     var musicBtn = document.getElementById("music_btn");
     var isBigScreen = 0;
-    if (screenW <= 1080) {
-        target.style.width = '100%';
-        musicBtn.style.width = '15%';
-    }
-     else {
+    if (/\b(Windows\sNT|Macintosh)\b/.test(navigator.userAgent)) {
         target.style.width = '50%';
         musicBtn.style.width = '5%';
         isBigScreen = 1;
+    } else { 
+        target.style.width = '100%';
+        musicBtn.style.width = '15%';
     }
 
     if (isBigScreen == 1) {
@@ -137,7 +133,6 @@
 
     document.getElementById("home-container").style.height = targetH + 'px';
     document.getElementById("home-content").style.height = targetHForContent + 'px';
-
     </script>
     <!-- 播放音乐 -->
     <script>
