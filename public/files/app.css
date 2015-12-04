@@ -81,6 +81,13 @@
     z-index: 1;
 }
 
+.center-word { 
+    margin-left: 2.5%;
+    width:95%;  
+    margin-top: 5%;
+    height:auto;
+}
+
 .home {
     width: 100%;
     z-index: 2;
@@ -92,11 +99,11 @@
 }
 
 .home .image_top {
-    width: 55%;
+    width: 60%;
     height: auto;
     left: 4%;
     top: 15%;
-    z-index: 1;
+    z-index: 10;
     position: absolute;
 }
 
@@ -180,6 +187,7 @@
     bottom: 0px;
     line-height: 1.7rem;
     margin: 0.625rem;
+    width: 100%;
     padding-bottom: 0.625rem;
     font-size: 1.2rem;
     position: absolute;
@@ -188,12 +196,13 @@
 .home .text .name {
     text-align: center;
     font-size: 1.5em;
+    margin:0 auto; 
 }
 
 .story {
     background: rgb(242, 230, 236);
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2.5%;
     padding-bottom: 5%;
 }
 
@@ -240,7 +249,7 @@
 .address {
     background: rgb(242, 230, 236);
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
     padding-top: 1rem;
     font-family: '华文仿宋', sans-serif;
 }
@@ -461,8 +470,8 @@
 }
 
 .musicbtn_on {
-    top: 5%; 
-    position: fixed; 
+    top: 5%;
+    position: fixed;
     height: auto;
     z-index: 999;
     animation: rotateAnim 5s linear infinite;
@@ -470,7 +479,7 @@
 }
 
 .musicbtn_off {
-    top: 5%; 
+    top: 5%;
     position: fixed;
     height: auto;
     z-index: 999;
